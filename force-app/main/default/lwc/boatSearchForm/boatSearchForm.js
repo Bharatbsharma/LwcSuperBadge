@@ -1,13 +1,11 @@
-import { LightningElement, api, track, wire } from 'lwc';
-
 // imports
+
+import { LightningElement, api, track, wire } from 'lwc';
 import getBoatTypes from '@salesforce/apex/BoatDataService.getBoatTypes';
 export default class BoatSearchForm extends LightningElement {
     selectedBoatTypeId = '';
-
     // Private
     error = undefined;
-
     // Needs explicit track due to nested data
     @track searchOptions;
 
